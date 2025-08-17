@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Atomico592/biamino-test-project/issues"
   },
@@ -23,6 +23,9 @@
     "nodemon": "^3.1.10"
   },
   "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "bs58": "^6.0.0",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0"
   }
 }
