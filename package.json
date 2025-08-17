@@ -1,0 +1,28 @@
+{
+  "name": "biamino-test-project",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000b\u0000i\u0000a\u0000m\u0000i\u0000n\u0000o\u0000-\u0000t\u0000e\u0000s\u0000t\u0000-\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atomico592/biamino-test-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Atomico592/biamino-test-project/issues"
+  },
+  "homepage": "https://github.com/Atomico592/biamino-test-project#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
