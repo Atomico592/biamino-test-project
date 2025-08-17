@@ -32,7 +32,36 @@ const  getQuote = async ({ inputMint, outputMint, atomicAmount }) => {
     } catch (e) {
         console.error(e.response?.data || e.message);
     }
-}
+};
+
+const buildSwapTx = async ({ quoteResponse }) => {
+    const body = {
+        quoteResponse,
+        userPublicKey: wallet.publicKey.toBase58(),
+        dynamicComputeUnitLimit: true,
+        prioritizationFeeLamports: {
+            priorityLevelWithMaxLamports: {
+                maxLamports: 1_000_000,
+                global: false,
+                priorityLevel: 'veryHigh',
+            },
+        },
+    };
+
+    try {
+        const res = await axios.post(
+            'https://lite-api.jup.ag/swap/v1/swap',
+            body,
+            { headers: { 'Content-Type': 'application/json' } }
+        );
+
+        return res.data.swapTransaction;
+    } catch (e) {
+        console.error(e.response?.data || e.message);
+    }
+};
+
+
 
 const quote = await getQuote({
     inputMint: USDT_ADRES,
