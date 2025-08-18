@@ -2,7 +2,7 @@ import {AptosAccount, AptosClient} from 'aptos';
 import { SDK, convertValueToDecimal } from '@pontem/liquidswap-sdk';
 import 'dotenv/config';
 
-const NODE_URL = process.env.NODE_URL;
+const NODE_URL = process.env.NODE_APT_URL;
 const client = new AptosClient(NODE_URL);
 
 
@@ -54,7 +54,7 @@ const run = async () => {
     await swapTokens(USDT, APT, 1);
 
     // 0.1 APT → USDT
-    // await swapTokens(APT, USDT, 0.1);
+    await swapTokens(APT, USDT, 0.1);
 }
 
 run()
