@@ -23,10 +23,13 @@
     "nodemon": "^3.1.10"
   },
   "dependencies": {
+    "@pontem/liquidswap-sdk": "^0.7.3",
     "@solana/web3.js": "^1.98.4",
+    "aptos": "^1.21.0",
     "axios": "^1.11.0",
     "bs58": "^6.0.0",
     "dotenv": "^17.2.1",
+    "ethers": "^6.15.0",
     "express": "^5.1.0",
     "web3": "^4.16.0"
   }
