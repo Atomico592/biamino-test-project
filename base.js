@@ -67,12 +67,12 @@ const  swapETHtoUSDT = async () => {
     }
 }
 
-const run = async () => {
+const runTx = async () => {
     await swapUSDTtoETH();
     await swapETHtoUSDT();
 }
 
-run();
+runTx();
 
 
 
