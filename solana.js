@@ -31,7 +31,6 @@ const getQuote = async ({ inputMint, outputMint, amount }) => {
                 restrictIntermediateTokens: true
             }
         });
-        console.log(res.data)
         return res.data;
     } catch (e) {
         console.error('Ошибка getQuote:', e.response?.data || e.message);
